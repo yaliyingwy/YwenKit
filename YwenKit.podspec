@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "YwenKit"
   s.version      = "0.0.1"
-  s.summary      = "A short description of YwenKit."
+  s.summary      = "some macros and categories for ios"
 
   s.description  = <<-DESC
                    A longer description of YwenKit in Markdown format.
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
