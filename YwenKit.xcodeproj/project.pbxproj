@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = F50E95021AEE7A3700B2F665 /* YwenAlert.h */; };
+		F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E95031AEE7A3700B2F665 /* YwenAlert.m */; };
 		F511C5041AE770A800836E3C /* Macros.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD8C281AE0A3340059AE8B /* Macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5FD8BFF1AE0A24C0059AE8B /* YwenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD8BFE1AE0A24C0059AE8B /* YwenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5FD8C051AE0A24C0059AE8B /* YwenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FD8BF91AE0A24C0059AE8B /* YwenKit.framework */; };
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F501EA6A1AEF4E8300080D93 /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UI.h; path = ui/UI.h; sourceTree = "<group>"; };
+		F50E95021AEE7A3700B2F665 /* YwenAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YwenAlert.h; path = ui/YwenAlert.h; sourceTree = "<group>"; };
+		F50E95031AEE7A3700B2F665 /* YwenAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YwenAlert.m; path = ui/YwenAlert.m; sourceTree = "<group>"; };
 		F5FD8BF91AE0A24C0059AE8B /* YwenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YwenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FD8BFD1AE0A24C0059AE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5FD8BFE1AE0A24C0059AE8B /* YwenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YwenKit.h; sourceTree = "<group>"; };
@@ -64,6 +69,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F50E95011AEE797D00B2F665 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F50E95021AEE7A3700B2F665 /* YwenAlert.h */,
+				F501EA6A1AEF4E8300080D93 /* UI.h */,
+				F50E95031AEE7A3700B2F665 /* YwenAlert.m */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
 		F5FD8BEF1AE0A24C0059AE8B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,7 @@
 		F5FD8BFB1AE0A24C0059AE8B /* YwenKit */ = {
 			isa = PBXGroup;
 			children = (
+				F50E95011AEE797D00B2F665 /* ui */,
 				F5FD8C271AE0A3020059AE8B /* macros */,
 				F5FD8C151AE0A2940059AE8B /* categories */,
 				F5FD8BFE1AE0A24C0059AE8B /* YwenKit.h */,
@@ -165,6 +181,7 @@
 				F5FD8C1F1AE0A2940059AE8B /* Categories.h in Headers */,
 				F5FD8C221AE0A2940059AE8B /* UIColor+WYExt.h in Headers */,
 				F5FD8C241AE0A2940059AE8B /* UIView+WYExt.h in Headers */,
+				F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */,
 				F5FD8C201AE0A2940059AE8B /* NSString+WYExt.h in Headers */,
 				F511C5041AE770A800836E3C /* Macros.h in Headers */,
 				F5FD8BFF1AE0A24C0059AE8B /* YwenKit.h in Headers */,
@@ -268,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5FD8C211AE0A2940059AE8B /* NSString+WYExt.m in Sources */,
+				F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */,
 				F5FD8C231AE0A2940059AE8B /* UIColor+WYExt.m in Sources */,
 				F5FD8C251AE0A2940059AE8B /* UIView+WYExt.m in Sources */,
 			);

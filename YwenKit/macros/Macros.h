@@ -27,5 +27,8 @@
 #define IOS7_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
 #define IOS6_OR_LATER    ( [[[UIDevice currentDevice] systemVersion] compare:@"6.0"] != NSOrderedAscending )
 
+//MARK: block
+typedef void (^CallBack)(void);
+
 
 #endif
