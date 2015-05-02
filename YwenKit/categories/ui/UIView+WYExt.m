@@ -15,7 +15,7 @@
     self.layer.masksToBounds = YES;
 }
 
--(void)WY_MakeBorder:(WyDirection)direction borderColor:(UIColor *)color lineWidth:(CGFloat)width {
+-(CAShapeLayer *) makeBorderLayer: (WyDirection) direction borderColor: (UIColor *) color lineWidth: (CGFloat) width {
     UIBezierPath *bezierPath;
     CAShapeLayer *layer = [[CAShapeLayer alloc] init];
     
@@ -26,12 +26,12 @@
             break;
             
         case Right:
-            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(self.bounds.size.width - width, 0, width, self.bounds.size.height)];
+            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, width, self.bounds.size.height)];
             layer.frame = CGRectMake(self.bounds.size.width - width, 0, width, self.bounds.size.height);
             break;
             
         case Bottom:
-            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, self.bounds.size.height - width, self.bounds.size.width, width)];
+            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, self.bounds.size.width, width)];
             layer.frame = CGRectMake(0, self.bounds.size.height - width, self.bounds.size.width, width);
             break;
             
@@ -41,20 +41,31 @@
             break;
             
         default:
-            return;
+            return nil;
             break;
     }
     
     layer.path = bezierPath.CGPath;
     layer.fillColor = color.CGColor;
-    [self.layer addSublayer:layer];
+    return layer;
+}
+
+-(void)WY_MakeBorder:(WyDirection)direction borderColor:(UIColor *)color lineWidth:(CGFloat)width {
+    NSUInteger origin = (NSUInteger) direction;
+    NSUInteger mask = 0b0001;
+    for (int i=0; i<4; i++) {
+        if (origin & mask) {
+            [self.layer addSublayer:[self makeBorderLayer:mask borderColor:color lineWidth:width]];
+        }
+        mask = mask << 1;
+    }
 }
 
 -(void)WY_MakeCircleBorder:(CGFloat)width color:(UIColor *)color {
     CGFloat radius = self.bounds.size.width / 2;
     [self WY_MakeCorn:radius];
     CAShapeLayer *circle = [[CAShapeLayer alloc] init];
-    circle.path = [UIBezierPath bezierPathWithArcCenter:self.center radius:radius startAngle:M_PI endAngle:M_PI * 2 clockwise:YES].CGPath;
+    circle.path = [UIBezierPath bezierPathWithArcCenter:CGPointMake(radius, radius) radius:radius startAngle:0 endAngle:M_PI * 2 clockwise:YES].CGPath;
     circle.fillColor = [UIColor clearColor].CGColor;
     circle.strokeColor = color.CGColor;
     circle.lineWidth = width;
