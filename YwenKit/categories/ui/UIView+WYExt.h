@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Macros.h>
 
 @interface UIView (WYExt)
 
 - (void) WY_MakeCorn: (CGFloat) radius;
-
+-(void) WY_MakeBorder:(WyDirection) direction borderColor: (UIColor *) color lineWidth:(CGFloat) width;
+-(void) WY_MakeCircleBorder: (CGFloat) width color: (UIColor *) color;
 @end

@@ -15,4 +15,50 @@
     self.layer.masksToBounds = YES;
 }
 
+-(void)WY_MakeBorder:(WyDirection)direction borderColor:(UIColor *)color lineWidth:(CGFloat)width {
+    UIBezierPath *bezierPath;
+    CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+    
+    switch (direction) {
+        case Top:
+            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, self.bounds.size.width, width)];
+            layer.frame = CGRectMake(0, 0, self.bounds.size.width, width);
+            break;
+            
+        case Right:
+            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(self.bounds.size.width - width, 0, width, self.bounds.size.height)];
+            layer.frame = CGRectMake(self.bounds.size.width - width, 0, width, self.bounds.size.height);
+            break;
+            
+        case Bottom:
+            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, self.bounds.size.height - width, self.bounds.size.width, width)];
+            layer.frame = CGRectMake(0, self.bounds.size.height - width, self.bounds.size.width, width);
+            break;
+            
+        case Left:
+            bezierPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, width, self.bounds.size.height)];
+            layer.frame = CGRectMake(0, 0, width, self.bounds.size.height);
+            break;
+            
+        default:
+            return;
+            break;
+    }
+    
+    layer.path = bezierPath.CGPath;
+    layer.fillColor = color.CGColor;
+    [self.layer addSublayer:layer];
+}
+
+-(void)WY_MakeCircleBorder:(CGFloat)width color:(UIColor *)color {
+    CGFloat radius = self.bounds.size.width / 2;
+    [self WY_MakeCorn:radius];
+    CAShapeLayer *circle = [[CAShapeLayer alloc] init];
+    circle.path = [UIBezierPath bezierPathWithArcCenter:self.center radius:radius startAngle:M_PI endAngle:M_PI * 2 clockwise:YES].CGPath;
+    circle.fillColor = [UIColor clearColor].CGColor;
+    circle.strokeColor = color.CGColor;
+    circle.lineWidth = width;
+    [self.layer addSublayer:circle];
+}
+
 @end
