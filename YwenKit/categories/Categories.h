@@ -14,6 +14,8 @@
 #import "UIView+WYExt.h"
 #import "NSDictionary+WYExt.h"
 #import "NSArray+WYExt.h"
+#import "NSData+WYExt.h"
+#import "UIImage+WYExt.h"
 
 
 
