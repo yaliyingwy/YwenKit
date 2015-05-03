@@ -51,7 +51,11 @@
             result[12], result[13], result[14], result[15]];
 }
 
-+(NSString *)randomString:(NSInteger)length {
+-(BOOL)WY_NotEmpty {
+    return (self == nil || [self isEqual:[NSNull null]] || [self isEqualToString:@""]);
+}
+
++(NSString *) WY_RandomString:(NSInteger)length {
     NSString *alphabet  = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789!@#$%^&*()?<>{}";
     NSMutableString *s = [NSMutableString stringWithCapacity:length];
     for (NSUInteger i = 0U; i < length; i++) {

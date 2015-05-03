@@ -14,6 +14,10 @@
 		F56CA69B1AF61258008497CB /* NSDictionary+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F56CA6991AF61258008497CB /* NSDictionary+WYExt.m */; };
 		F56CA69E1AF6136A008497CB /* NSArray+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F56CA69C1AF6136A008497CB /* NSArray+WYExt.h */; };
 		F56CA69F1AF6136A008497CB /* NSArray+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F56CA69D1AF6136A008497CB /* NSArray+WYExt.m */; };
+		F5FD418C1AF67AA00069A9CF /* NSData+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD418A1AF67AA00069A9CF /* NSData+WYExt.h */; };
+		F5FD418D1AF67AA00069A9CF /* NSData+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD418B1AF67AA00069A9CF /* NSData+WYExt.m */; };
+		F5FD41901AF67CE40069A9CF /* UIImage+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD418E1AF67CE40069A9CF /* UIImage+WYExt.h */; };
+		F5FD41911AF67CE40069A9CF /* UIImage+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F5FD418F1AF67CE40069A9CF /* UIImage+WYExt.m */; };
 		F5FD8BFF1AE0A24C0059AE8B /* YwenKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD8BFE1AE0A24C0059AE8B /* YwenKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5FD8C051AE0A24C0059AE8B /* YwenKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5FD8BF91AE0A24C0059AE8B /* YwenKit.framework */; };
 		F5FD8C1F1AE0A2940059AE8B /* Categories.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD8C161AE0A2940059AE8B /* Categories.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +47,10 @@
 		F56CA6991AF61258008497CB /* NSDictionary+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WYExt.m"; sourceTree = "<group>"; };
 		F56CA69C1AF6136A008497CB /* NSArray+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WYExt.h"; sourceTree = "<group>"; };
 		F56CA69D1AF6136A008497CB /* NSArray+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WYExt.m"; sourceTree = "<group>"; };
+		F5FD418A1AF67AA00069A9CF /* NSData+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+WYExt.h"; sourceTree = "<group>"; };
+		F5FD418B1AF67AA00069A9CF /* NSData+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+WYExt.m"; sourceTree = "<group>"; };
+		F5FD418E1AF67CE40069A9CF /* UIImage+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WYExt.h"; sourceTree = "<group>"; };
+		F5FD418F1AF67CE40069A9CF /* UIImage+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WYExt.m"; sourceTree = "<group>"; };
 		F5FD8BF91AE0A24C0059AE8B /* YwenKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YwenKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FD8BFD1AE0A24C0059AE8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5FD8BFE1AE0A24C0059AE8B /* YwenKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YwenKit.h; sourceTree = "<group>"; };
@@ -157,6 +165,8 @@
 				F5FD8C181AE0A2940059AE8B /* NSString+WYExt.h */,
 				F5FD8C191AE0A2940059AE8B /* NSString+WYExt.m */,
 				F56CA6981AF61258008497CB /* NSDictionary+WYExt.h */,
+				F5FD418A1AF67AA00069A9CF /* NSData+WYExt.h */,
+				F5FD418B1AF67AA00069A9CF /* NSData+WYExt.m */,
 				F56CA6991AF61258008497CB /* NSDictionary+WYExt.m */,
 				F56CA69C1AF6136A008497CB /* NSArray+WYExt.h */,
 				F56CA69D1AF6136A008497CB /* NSArray+WYExt.m */,
@@ -168,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				F5FD8C1B1AE0A2940059AE8B /* UIColor+WYExt.h */,
+				F5FD418E1AF67CE40069A9CF /* UIImage+WYExt.h */,
+				F5FD418F1AF67CE40069A9CF /* UIImage+WYExt.m */,
 				F5FD8C1C1AE0A2940059AE8B /* UIColor+WYExt.m */,
 				F5FD8C1D1AE0A2940059AE8B /* UIView+WYExt.h */,
 				F5FD8C1E1AE0A2940059AE8B /* UIView+WYExt.m */,
@@ -192,9 +204,11 @@
 			files = (
 				F5FD8C1F1AE0A2940059AE8B /* Categories.h in Headers */,
 				F5FD8C221AE0A2940059AE8B /* UIColor+WYExt.h in Headers */,
+				F5FD41901AF67CE40069A9CF /* UIImage+WYExt.h in Headers */,
 				F56CA69E1AF6136A008497CB /* NSArray+WYExt.h in Headers */,
 				F5FD8C241AE0A2940059AE8B /* UIView+WYExt.h in Headers */,
 				F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */,
+				F5FD418C1AF67AA00069A9CF /* NSData+WYExt.h in Headers */,
 				F5FD8C201AE0A2940059AE8B /* NSString+WYExt.h in Headers */,
 				F56CA69A1AF61258008497CB /* NSDictionary+WYExt.h in Headers */,
 				F511C5041AE770A800836E3C /* Macros.h in Headers */,
@@ -298,12 +312,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FD418D1AF67AA00069A9CF /* NSData+WYExt.m in Sources */,
 				F56CA69B1AF61258008497CB /* NSDictionary+WYExt.m in Sources */,
 				F5FD8C211AE0A2940059AE8B /* NSString+WYExt.m in Sources */,
 				F56CA69F1AF6136A008497CB /* NSArray+WYExt.m in Sources */,
 				F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */,
 				F5FD8C231AE0A2940059AE8B /* UIColor+WYExt.m in Sources */,
 				F5FD8C251AE0A2940059AE8B /* UIView+WYExt.m in Sources */,
+				F5FD41911AF67CE40069A9CF /* UIImage+WYExt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

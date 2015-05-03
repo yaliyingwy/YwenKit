@@ -13,7 +13,8 @@
 
 - (BOOL) WY_IsMobileNumber;
 - (NSString *) WY_MD5;
+- (BOOL) WY_NotEmpty;
 
-+(NSString *) randomString: (NSInteger) length;
++(NSString *) WY_RandomString: (NSInteger) length;
 
 @end
