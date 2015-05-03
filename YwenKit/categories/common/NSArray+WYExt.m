@@ -10,7 +10,7 @@
 
 @implementation NSArray (WYExt)
 
-+(NSString *)WY_ToJson {
+-(NSString *)WY_ToJson {
     if ([NSJSONSerialization isValidJSONObject:self]) {
         NSData *data = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:nil];
         return [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];

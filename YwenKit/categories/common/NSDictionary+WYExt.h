@@ -10,6 +10,6 @@
 
 @interface NSDictionary (WYExt)
 
-+(NSString *) WY_ToJson;
+-(NSString *) WY_ToJson;
 
 @end

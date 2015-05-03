@@ -12,6 +12,9 @@
 #import "NSString+WYExt.h"
 #import "UIColor+WYExt.h"
 #import "UIView+WYExt.h"
+#import "NSDictionary+WYExt.h"
+#import "NSArray+WYExt.h"
+
 
 
 #endif

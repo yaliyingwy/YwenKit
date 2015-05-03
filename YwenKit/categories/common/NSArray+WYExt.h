@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSArray (WYExt)
-+(NSString *) WY_ToJson;
+-(NSString *) WY_ToJson;
 
 @end
