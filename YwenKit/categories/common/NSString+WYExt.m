@@ -51,7 +51,7 @@
             result[12], result[13], result[14], result[15]];
 }
 
--(BOOL)WY_NotEmpty {
+-(BOOL)WY_IsEmpty {
     return (self == nil || [self isEqual:[NSNull null]] || [self isEqualToString:@""]);
 }
 
