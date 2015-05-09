@@ -21,4 +21,36 @@
     }
 }
 
+-(NSString *)WY_GetString:(NSString *)key {
+    id result = [self objectForKey:key];
+    if ([result isKindOfClass:[NSString class]]) {
+        return result;
+    }
+    else{
+        return [result stringValue];
+    }
+}
+
+-(NSDictionary *)WY_GetDic:(NSString *)key {
+    id result = [self objectForKey:key];
+    if ([result isKindOfClass:[NSDictionary class]]) {
+        return result;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
+-(NSArray *)WY_GetArr:(NSString *)key {
+    id result = [self objectForKey:key];
+    if ([result isKindOfClass:[NSArray class]]) {
+        return result;
+    }
+    else
+    {
+        return nil;
+    }
+}
+
 @end

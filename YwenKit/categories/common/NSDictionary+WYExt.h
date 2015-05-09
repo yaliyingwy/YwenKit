@@ -11,5 +11,8 @@
 @interface NSDictionary (WYExt)
 
 -(NSString *) WY_ToJson;
+-(NSString *) WY_GetString:(NSString *) key;
+-(NSDictionary *) WY_GetDic:(NSString *) key;
+-(NSArray *) WY_GetArr: (NSString *) key;
 
 @end
