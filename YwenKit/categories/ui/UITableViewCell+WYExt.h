@@ -16,7 +16,6 @@
 @end
 
 @interface UITableViewCell (WYExt)
-@property (strong, nonatomic) NSIndexPath *indexPath;
-@property (weak, nonatomic) id<SelectCellProtocol> selectCellDelegate;
+
 
 @end

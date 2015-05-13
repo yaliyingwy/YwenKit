@@ -10,21 +10,4 @@
 
 @implementation UITableViewCell (WYExt)
 
--(void)setIndexPath:(NSIndexPath *)indexPath {
-    self.indexPath = indexPath;
-}
-
--(NSIndexPath *)indexPath {
-    return self.indexPath;
-}
-
--(void) setSelectCellDelegate:(id<SelectCellProtocol>)selectCellDelegate {
-    self.selectCellDelegate = selectCellDelegate;
-}
-
--(id<SelectCellProtocol>)selectCellDelegate {
-    return self.selectCellDelegate;
-}
-
-
 @end
