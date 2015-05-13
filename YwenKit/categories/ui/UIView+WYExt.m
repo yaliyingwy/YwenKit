@@ -7,6 +7,7 @@
 //
 
 #import "UIView+WYExt.h"
+#import "UIColor+WYExt.h"
 
 @implementation UIView (WYExt)
 
@@ -70,6 +71,11 @@
     circle.strokeColor = color.CGColor;
     circle.lineWidth = width;
     [self.layer addSublayer:circle];
+}
+
+-(void)WY_SetBorder:(NSInteger)borderColor width:(CGFloat)borderWidth {
+    self.layer.borderColor = [UIColor WY_ColorWithHex:borderColor].CGColor;
+    self.layer.borderWidth = borderWidth;
 }
 
 @end

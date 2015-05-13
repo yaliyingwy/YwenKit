@@ -16,6 +16,9 @@
 #import "NSArray+WYExt.h"
 #import "NSData+WYExt.h"
 #import "UIImage+WYExt.h"
+#import "UILabel+WYExt.h"
+#import "UIButton+WYExt.h"
+#import "UITextField+WYExt.h"
 
 
 

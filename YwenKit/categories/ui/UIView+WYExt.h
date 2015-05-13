@@ -14,4 +14,5 @@
 - (void) WY_MakeCorn: (CGFloat) radius;
 -(void) WY_MakeBorder:(WyDirection) direction borderColor: (UIColor *) color lineWidth:(CGFloat) width;
 -(void) WY_MakeCircleBorder: (CGFloat) width color: (UIColor *) color;
+-(void) WY_SetBorder:(NSInteger) borderColor width:(CGFloat) borderWidth;
 @end
