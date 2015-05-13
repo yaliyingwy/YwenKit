@@ -13,6 +13,8 @@
 		F50948C11B02DF0C0026159B /* UIButton+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F50948BF1B02DF0C0026159B /* UIButton+WYExt.m */; };
 		F50948C41B02E0F70026159B /* UITextField+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F50948C21B02E0F70026159B /* UITextField+WYExt.h */; };
 		F50948C51B02E0F70026159B /* UITextField+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F50948C31B02E0F70026159B /* UITextField+WYExt.m */; };
+		F50948CF1B02EFAC0026159B /* UITableViewCell+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F50948CD1B02EFAC0026159B /* UITableViewCell+WYExt.h */; };
+		F50948D01B02EFAC0026159B /* UITableViewCell+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F50948CE1B02EFAC0026159B /* UITableViewCell+WYExt.m */; };
 		F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = F50E95021AEE7A3700B2F665 /* YwenAlert.h */; };
 		F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E95031AEE7A3700B2F665 /* YwenAlert.m */; };
 		F511C5041AE770A800836E3C /* Macros.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD8C281AE0A3340059AE8B /* Macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -53,6 +55,8 @@
 		F50948BF1B02DF0C0026159B /* UIButton+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WYExt.m"; sourceTree = "<group>"; };
 		F50948C21B02E0F70026159B /* UITextField+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WYExt.h"; sourceTree = "<group>"; };
 		F50948C31B02E0F70026159B /* UITextField+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WYExt.m"; sourceTree = "<group>"; };
+		F50948CD1B02EFAC0026159B /* UITableViewCell+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WYExt.h"; sourceTree = "<group>"; };
+		F50948CE1B02EFAC0026159B /* UITableViewCell+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WYExt.m"; sourceTree = "<group>"; };
 		F50E95021AEE7A3700B2F665 /* YwenAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YwenAlert.h; path = ui/YwenAlert.h; sourceTree = "<group>"; };
 		F50E95031AEE7A3700B2F665 /* YwenAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YwenAlert.m; path = ui/YwenAlert.m; sourceTree = "<group>"; };
 		F56CA6981AF61258008497CB /* NSDictionary+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WYExt.h"; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				F5FD8C1B1AE0A2940059AE8B /* UIColor+WYExt.h */,
+				F50948CD1B02EFAC0026159B /* UITableViewCell+WYExt.h */,
+				F50948CE1B02EFAC0026159B /* UITableViewCell+WYExt.m */,
 				F5FD418E1AF67CE40069A9CF /* UIImage+WYExt.h */,
 				F5FD418F1AF67CE40069A9CF /* UIImage+WYExt.m */,
 				F50948BA1B02DE110026159B /* UILabel+WYExt.h */,
@@ -227,6 +233,7 @@
 				F50948C41B02E0F70026159B /* UITextField+WYExt.h in Headers */,
 				F5FD8C241AE0A2940059AE8B /* UIView+WYExt.h in Headers */,
 				F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */,
+				F50948CF1B02EFAC0026159B /* UITableViewCell+WYExt.h in Headers */,
 				F5FD418C1AF67AA00069A9CF /* NSData+WYExt.h in Headers */,
 				F50948C01B02DF0C0026159B /* UIButton+WYExt.h in Headers */,
 				F5FD8C201AE0A2940059AE8B /* NSString+WYExt.h in Headers */,
@@ -340,6 +347,7 @@
 				F5FD8C211AE0A2940059AE8B /* NSString+WYExt.m in Sources */,
 				F50948C51B02E0F70026159B /* UITextField+WYExt.m in Sources */,
 				F56CA69F1AF6136A008497CB /* NSArray+WYExt.m in Sources */,
+				F50948D01B02EFAC0026159B /* UITableViewCell+WYExt.m in Sources */,
 				F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */,
 				F5FD8C231AE0A2940059AE8B /* UIColor+WYExt.m in Sources */,
 				F5FD8C251AE0A2940059AE8B /* UIView+WYExt.m in Sources */,
