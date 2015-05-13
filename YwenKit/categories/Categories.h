@@ -19,6 +19,7 @@
 #import "UILabel+WYExt.h"
 #import "UIButton+WYExt.h"
 #import "UITextField+WYExt.h"
+#import "UITableViewCell+WYExt.h"
 
 
 
