@@ -20,16 +20,25 @@ static YwenAlert *_alert;
 
 -(void) alert: (NSString *) message vc: (UIViewController *) vc confirmString: (NSString *) confirmString confirmBlock: (CallBack) confirmBlock cancelString: (NSString *) cancelString cancelBlock: (CallBack) cancelBlock {
     
+    _confirmCb = confirmBlock;
+    _cancelCb = cancelBlock;
+    
     if (IOS8_OR_LATER) {
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:self.title message:message preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *confirmAction = [UIAlertAction actionWithTitle:confirmString style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-            [alertController dismissViewControllerAnimated:YES completion:confirmBlock];
+            [alertController dismissViewControllerAnimated:YES completion:nil];
+            if (_confirmCb != nil) {
+                _confirmCb();
+            }
         }];
         [alertController addAction:confirmAction];
         
         if (cancelString != nil) {
             UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelString style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-                [alertController dismissViewControllerAnimated:YES completion:cancelBlock];
+                [alertController dismissViewControllerAnimated:YES completion:nil];
+                if (_cancelCb != nil) {
+                    _cancelCb();
+                }
             }];
             [alertController addAction:cancelAction];
         }
@@ -39,7 +48,15 @@ static YwenAlert *_alert;
     }
     else
     {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:self.title message:message delegate:self cancelButtonTitle:cancelString otherButtonTitles: nil];
+        UIAlertView *alertView;
+        if (cancelString == nil) {
+            alertView = [[UIAlertView alloc] initWithTitle:self.title message:message delegate:self cancelButtonTitle:confirmString otherButtonTitles: nil];
+        }
+        else
+        {
+             alertView = [[UIAlertView alloc] initWithTitle:self.title message:message delegate:self cancelButtonTitle:cancelString otherButtonTitles: confirmString, nil];
+        }
+       
         _confirmCb = confirmBlock ? confirmBlock : nil;
         _cancelCb = cancelBlock ? cancelBlock : nil;
         [alertView show];
