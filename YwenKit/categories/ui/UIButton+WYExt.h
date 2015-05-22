@@ -10,6 +10,8 @@
 
 @interface UIButton (WYExt)
 
+@property(nonatomic, assign) UIEdgeInsets hitTestEdgeInsets;
+
 -(void) WY_SetBgColor:(NSInteger) bgColor title:(NSString *) title titleColor:(NSInteger) titleColor corn:(CGFloat) corn fontSize: (CGFloat) fontSize;
 
 @end
