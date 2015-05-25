@@ -52,7 +52,7 @@
 }
 
 -(BOOL)WY_IsEmpty {
-    return (self == nil || [self isEqual:[NSNull null]] || [self isEqualToString:@""]);
+    return (self == nil || [self isKindOfClass:[NSNull class]] || [self isEqualToString:@""]);
 }
 
 +(NSString *) WY_RandomString:(NSInteger)length {
