@@ -8,7 +8,7 @@
 
 #import "NSString+WYExt.h"
 
-#define NUMBERS [NSMutableCharacterSet characterSetWithCharactersInString:@"0123456789X\n"]
+#define NUMBERS [NSMutableCharacterSet characterSetWithCharactersInString:@"0123456789"]
 #define LOWER_LETTERS [NSCharacterSet lowercaseLetterCharacterSet]
 #define UPPER_LETTERS [NSCharacterSet uppercaseLetterCharacterSet]
 
@@ -150,7 +150,7 @@
 }
 
 -(BOOL)WY_IsEmpty {
-    return (self == nil || [self isKindOfClass:[NSNull class]] || [self isEqualToString:@""]);
+    return ([self isKindOfClass:[NSNull class]] || [self isEqualToString:@""]);
 }
 
 +(NSString *) WY_RandomString:(NSInteger)length {
@@ -165,8 +165,43 @@
 }
 
 -(NSString *)WY_TrimStyle {
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"style=\".*\"" options:NSRegularExpressionCaseInsensitive error:nil];
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"style=\".*?\"" options:NSRegularExpressionCaseInsensitive error:nil];
     return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, self.length) withTemplate:@""];
+}
+
+-(BOOL) WY_HasLetter {
+    if (self.length <= 0) {
+        return NO;
+    }
+    NSMutableCharacterSet *cs = [[NSMutableCharacterSet alloc] init];
+    [cs formUnionWithCharacterSet:LOWER_LETTERS];
+    [cs formUnionWithCharacterSet:UPPER_LETTERS];
+    
+    NSString *filtered = [[self componentsSeparatedByCharactersInSet:cs] componentsJoinedByString:@""];
+    
+    if ([self isEqualToString:filtered]) {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
+}
+
+-(BOOL) WY_HasNumber {
+    if (self.length <= 0) {
+        return NO;
+    }
+    
+    NSString *filtered = [[self componentsSeparatedByCharactersInSet:NUMBERS] componentsJoinedByString:@""];
+    
+    if ([self isEqualToString:filtered]) {
+        return NO;
+    }
+    else
+    {
+        return YES;
+    }
 }
 
 @end
