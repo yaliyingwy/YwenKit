@@ -13,6 +13,8 @@
 
 - (BOOL) WY_IsMobileNumber;
 -(BOOL) WY_IsMobileNumberStrict;
+-(BOOL) WY_IsFixedPhone;
+-(BOOL) WY_IsPostalCode;
 - (NSString *) WY_MD5;
 - (BOOL) WY_IsEmpty;
 -(BOOL) WY_IsNumber;
@@ -24,6 +26,7 @@
 -(BOOL) WY_HasLetter;
 -(BOOL) WY_IsNumberOrLetter;
 -(NSString *) WY_TrimStyle;
+
 
 
 +(NSString *) WY_RandomString: (NSInteger) length;

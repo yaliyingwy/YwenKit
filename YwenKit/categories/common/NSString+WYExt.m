@@ -204,4 +204,22 @@
     }
 }
 
+-(BOOL)WY_IsFixedPhone {
+    if (self.length <= 0) {
+        return NO;
+    }
+    NSString *reg = @"^(\\d{3.4}-)\\d{7,8}$";
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",reg];
+    return [predicate evaluateWithObject:self];
+}
+
+-(BOOL)WY_IsPostalCode {
+    if (self.length <= 0) {
+        return NO;
+    }
+    NSString *reg = @"[1-9]\\d{5}(?!\\d)";
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",reg];
+    return [predicate evaluateWithObject:self];
+}
+
 @end
