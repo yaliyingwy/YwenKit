@@ -20,4 +20,6 @@ FOUNDATION_EXPORT const unsigned char YwenKitVersionString[];
 #import "Categories.h"
 #import "Macros.h"
 #import "UI.h"
+#import "YwenCache.h"
+#import "YwenImageUrlCache.h"
 
