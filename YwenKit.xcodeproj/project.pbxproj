@@ -18,6 +18,10 @@
 		F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */ = {isa = PBXBuildFile; fileRef = F50E95021AEE7A3700B2F665 /* YwenAlert.h */; };
 		F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = F50E95031AEE7A3700B2F665 /* YwenAlert.m */; };
 		F511C5041AE770A800836E3C /* Macros.h in Headers */ = {isa = PBXBuildFile; fileRef = F5FD8C281AE0A3340059AE8B /* Macros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5328F421B19DB3C00E9F176 /* YwenCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F5328F401B19DB3C00E9F176 /* YwenCache.h */; };
+		F5328F431B19DB3C00E9F176 /* YwenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F5328F411B19DB3C00E9F176 /* YwenCache.m */; };
+		F5328F461B19E72100E9F176 /* YwenImageUrlCache.h in Headers */ = {isa = PBXBuildFile; fileRef = F5328F441B19E72100E9F176 /* YwenImageUrlCache.h */; };
+		F5328F471B19E72100E9F176 /* YwenImageUrlCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F5328F451B19E72100E9F176 /* YwenImageUrlCache.m */; };
 		F56CA69A1AF61258008497CB /* NSDictionary+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F56CA6981AF61258008497CB /* NSDictionary+WYExt.h */; };
 		F56CA69B1AF61258008497CB /* NSDictionary+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F56CA6991AF61258008497CB /* NSDictionary+WYExt.m */; };
 		F56CA69E1AF6136A008497CB /* NSArray+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F56CA69C1AF6136A008497CB /* NSArray+WYExt.h */; };
@@ -59,6 +63,10 @@
 		F50948CE1B02EFAC0026159B /* UITableViewCell+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WYExt.m"; sourceTree = "<group>"; };
 		F50E95021AEE7A3700B2F665 /* YwenAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YwenAlert.h; path = ui/YwenAlert.h; sourceTree = "<group>"; };
 		F50E95031AEE7A3700B2F665 /* YwenAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YwenAlert.m; path = ui/YwenAlert.m; sourceTree = "<group>"; };
+		F5328F401B19DB3C00E9F176 /* YwenCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YwenCache.h; path = net/cache/YwenCache.h; sourceTree = "<group>"; };
+		F5328F411B19DB3C00E9F176 /* YwenCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YwenCache.m; path = net/cache/YwenCache.m; sourceTree = "<group>"; };
+		F5328F441B19E72100E9F176 /* YwenImageUrlCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YwenImageUrlCache.h; path = net/cache/YwenImageUrlCache.h; sourceTree = "<group>"; };
+		F5328F451B19E72100E9F176 /* YwenImageUrlCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YwenImageUrlCache.m; path = net/cache/YwenImageUrlCache.m; sourceTree = "<group>"; };
 		F56CA6981AF61258008497CB /* NSDictionary+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WYExt.h"; sourceTree = "<group>"; };
 		F56CA6991AF61258008497CB /* NSDictionary+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WYExt.m"; sourceTree = "<group>"; };
 		F56CA69C1AF6136A008497CB /* NSArray+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WYExt.h"; sourceTree = "<group>"; };
@@ -111,6 +119,25 @@
 			name = ui;
 			sourceTree = "<group>";
 		};
+		F5328F3E1B19D8EC00E9F176 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				F5328F3F1B19D8FD00E9F176 /* cache */,
+			);
+			name = net;
+			sourceTree = "<group>";
+		};
+		F5328F3F1B19D8FD00E9F176 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				F5328F401B19DB3C00E9F176 /* YwenCache.h */,
+				F5328F411B19DB3C00E9F176 /* YwenCache.m */,
+				F5328F441B19E72100E9F176 /* YwenImageUrlCache.h */,
+				F5328F451B19E72100E9F176 /* YwenImageUrlCache.m */,
+			);
+			name = cache;
+			sourceTree = "<group>";
+		};
 		F5FD8BEF1AE0A24C0059AE8B = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +159,7 @@
 		F5FD8BFB1AE0A24C0059AE8B /* YwenKit */ = {
 			isa = PBXGroup;
 			children = (
+				F5328F3E1B19D8EC00E9F176 /* net */,
 				F50E95011AEE797D00B2F665 /* ui */,
 				F5FD8C271AE0A3020059AE8B /* macros */,
 				F5FD8C151AE0A2940059AE8B /* categories */,
@@ -233,7 +261,9 @@
 				F50948C41B02E0F70026159B /* UITextField+WYExt.h in Headers */,
 				F5FD8C241AE0A2940059AE8B /* UIView+WYExt.h in Headers */,
 				F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */,
+				F5328F461B19E72100E9F176 /* YwenImageUrlCache.h in Headers */,
 				F50948CF1B02EFAC0026159B /* UITableViewCell+WYExt.h in Headers */,
+				F5328F421B19DB3C00E9F176 /* YwenCache.h in Headers */,
 				F5FD418C1AF67AA00069A9CF /* NSData+WYExt.h in Headers */,
 				F50948C01B02DF0C0026159B /* UIButton+WYExt.h in Headers */,
 				F5FD8C201AE0A2940059AE8B /* NSString+WYExt.h in Headers */,
@@ -345,7 +375,9 @@
 				F50948BD1B02DE110026159B /* UILabel+WYExt.m in Sources */,
 				F50948C11B02DF0C0026159B /* UIButton+WYExt.m in Sources */,
 				F5FD8C211AE0A2940059AE8B /* NSString+WYExt.m in Sources */,
+				F5328F471B19E72100E9F176 /* YwenImageUrlCache.m in Sources */,
 				F50948C51B02E0F70026159B /* UITextField+WYExt.m in Sources */,
+				F5328F431B19DB3C00E9F176 /* YwenCache.m in Sources */,
 				F56CA69F1AF6136A008497CB /* NSArray+WYExt.m in Sources */,
 				F50948D01B02EFAC0026159B /* UITableViewCell+WYExt.m in Sources */,
 				F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */,
