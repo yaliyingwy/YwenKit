@@ -208,7 +208,7 @@
     if (self.length <= 0) {
         return NO;
     }
-    NSString *reg = @"^(\\d{3.4}-)\\d{7,8}$";
+    NSString *reg = @"^(\\d{3,4}-?)\\d{7,8}$";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",reg];
     return [predicate evaluateWithObject:self];
 }
