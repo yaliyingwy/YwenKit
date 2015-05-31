@@ -150,7 +150,7 @@
 }
 
 -(BOOL)WY_IsEmpty {
-    return ([self isKindOfClass:[NSNull class]] || [self isEqualToString:@""]);
+    return ([self isKindOfClass:[NSNull class]] || self.length == 0);
 }
 
 +(NSString *) WY_RandomString:(NSInteger)length {
