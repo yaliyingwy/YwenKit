@@ -44,7 +44,16 @@
         return;
     }
     
-    [[YwenCache globalCache] put: cachedResponse.data forKey:pathString];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        NSString *str = [[NSString alloc] initWithData:cachedResponse.data encoding:NSUTF8StringEncoding];
+        NSString *reg = @"(html)?.*(404|500).*";
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",reg];
+        if (![predicate evaluateWithObject:str]) {
+            [[YwenCache globalCache] put: cachedResponse.data forKey:pathString];
+        }
+    });
+    
+    
 }
 
 @end
