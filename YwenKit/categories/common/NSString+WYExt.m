@@ -217,7 +217,7 @@
     if (self.length <= 0) {
         return NO;
     }
-    NSString *reg = @"[1-9]\\d{5}(?!\\d)";
+    NSString *reg = @"\\d{6}(?!\\d)";
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",reg];
     return [predicate evaluateWithObject:self];
 }
