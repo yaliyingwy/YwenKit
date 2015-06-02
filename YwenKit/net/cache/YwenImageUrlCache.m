@@ -11,6 +11,18 @@
 
 @implementation YwenImageUrlCache
 
+-(void)setCacheDir:(NSString *)cacheDir {
+    [YwenCache globalCache].cacheDir = cacheDir;
+}
+
+-(void)setCacheSize:(NSInteger)cacheSize {
+    [YwenCache globalCache].cacheSize = cacheSize;
+}
+
+-(void)setCacheTime:(NSTimeInterval)cacheTime {
+    [YwenCache globalCache].cacheTime = cacheTime;
+}
+
 - (NSCachedURLResponse *)cachedResponseForRequest:(NSURLRequest *)request {
     
     NSString *pathString = [[request URL] absoluteString];

@@ -27,6 +27,9 @@
 -(instancetype)init {
     self = [super init];
     if (self) {
+        
+        _cacheTime = 15 * 24 * 60 * 60;
+        
         self.cacheDir = [NSHomeDirectory() stringByAppendingString:@"/Library/Caches/ywenCache"];
         
         
@@ -37,7 +40,7 @@
         dispatch_set_target_queue(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), _infoQueue);
         
         
-        if ([[NSFileManager defaultManager] fileExistsAtPath:_infoPath isDirectory:NO]) {
+        if ([[NSFileManager defaultManager] fileExistsAtPath:_infoPath]) {
             _cacheDic = [[NSMutableDictionary alloc] initWithContentsOfFile:_infoPath];
         }
         else
@@ -45,7 +48,26 @@
             _cacheDic = [[NSMutableDictionary alloc] init];
         }
     }
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        [self setUp];
+    });
+    
     return self;
+}
+
+-(void) setUp {
+    for (NSString *key in _cacheDic.allKeys) {
+        NSDate *createdDate  =[_cacheDic objectForKey:key];
+        if (_cacheTime + [createdDate timeIntervalSinceNow] <= 0) {
+            dispatch_async(_diskQueue, ^{
+                NSString *path = [_cacheDir stringByAppendingPathComponent:key];
+                [[NSFileManager defaultManager] removeItemAtPath:path error:nil];
+                [_cacheDic removeObjectForKey: key];
+                [self updateInfo];
+            });
+        }
+    }
 }
 
 -(void)setCacheDir:(NSString *)cacheDir {

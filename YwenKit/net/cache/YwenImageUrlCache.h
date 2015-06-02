@@ -10,4 +10,9 @@
 
 @interface YwenImageUrlCache : NSURLCache
 
+@property (assign, nonatomic) NSTimeInterval cacheTime;
+@property (assign, nonatomic) NSInteger cacheSize;
+@property (strong, nonatomic) NSString *cacheDir;
+
+
 @end
