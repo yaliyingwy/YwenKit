@@ -65,8 +65,8 @@ static const NSString *KEY_HIT_TEST_EDGE_INSETS = @"HitTestEdgeInsets";
         UIImage *disableImage = [UIImage WY_ImageWithColor:disableColor size:CGSizeMake(self.frame.size.width, self.frame.size.height)];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self setImage:hlImage forState:UIControlStateHighlighted];
-            [self setImage:disableImage forState:UIControlStateDisabled];
+            [self setBackgroundImage:hlImage forState:UIControlStateHighlighted];
+            [self setBackgroundImage:disableImage forState:UIControlStateDisabled];
         });
         
     });
