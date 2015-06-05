@@ -14,4 +14,8 @@
 
 -(void) WY_SetBgColor:(NSInteger) bgColor title:(NSString *) title titleColor:(NSInteger) titleColor corn:(CGFloat) corn fontSize: (CGFloat) fontSize;
 
+-(void)WY_SetBgColor:(NSInteger)bgColor hlColor:(NSInteger)hlColor disableColor:(NSInteger)disableColor title:(NSString *)title titleColor:(NSInteger)titleColor corn:(CGFloat)corn fontSize:(CGFloat)fontSize;
+
+-(void)WY_SetBgColor:(NSInteger)bgColor hlColor:(NSInteger)hlColor disableColor:(NSInteger)disableColor title:(NSString *)title titleColor:(NSInteger)titleColor hlTtitleColor:(NSInteger) hlTitleColor disableTitleColor:(NSInteger) disableTitleColor corn:(CGFloat)corn fontSize:(CGFloat)fontSize;
+
 @end

@@ -11,5 +11,6 @@
 @interface UIImage (WYExt)
 
 -(UIImage *) WY_Strech:(CGFloat) horizontal vertical:(CGFloat) vertical;
++(UIImage *)WY_ImageWithColor:(NSInteger)color size:(CGSize)size;
 
 @end

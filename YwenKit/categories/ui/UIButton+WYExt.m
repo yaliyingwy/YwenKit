@@ -10,6 +10,7 @@
 #import "UIColor+WYExt.h"
 #import "UIView+WYExt.h"
 #import <objc/runtime.h>
+#import "UIImage+WYExt.h"
 
 @implementation UIButton (WYExt)
 
@@ -53,6 +54,30 @@ static const NSString *KEY_HIT_TEST_EDGE_INSETS = @"HitTestEdgeInsets";
     }
     self.titleLabel.font = [UIFont boldSystemFontOfSize:fontSize];
     
+}
+
+-(void)WY_SetBgColor:(NSInteger)bgColor hlColor:(NSInteger)hlColor disableColor:(NSInteger)disableColor title:(NSString *)title titleColor:(NSInteger)titleColor corn:(CGFloat)corn fontSize:(CGFloat)fontSize {
+    [self WY_SetBgColor:bgColor title:title titleColor:titleColor corn:corn fontSize:fontSize];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.01 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIImage *hlImage = [UIImage WY_ImageWithColor:hlColor size:CGSizeMake(self.frame.size.width, self.frame.size.height)];
+        
+        UIImage *disableImage = [UIImage WY_ImageWithColor:disableColor size:CGSizeMake(self.frame.size.width, self.frame.size.height)];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self setImage:hlImage forState:UIControlStateHighlighted];
+            [self setImage:disableImage forState:UIControlStateDisabled];
+        });
+        
+    });
+    
+}
+
+-(void)WY_SetBgColor:(NSInteger)bgColor hlColor:(NSInteger)hlColor disableColor:(NSInteger)disableColor title:(NSString *)title titleColor:(NSInteger)titleColor hlTtitleColor:(NSInteger)hlTitleColor disableTitleColor:(NSInteger)disableTitleColor corn:(CGFloat)corn fontSize:(CGFloat)fontSize {
+    [self WY_SetBgColor:bgColor hlColor:hlColor disableColor:disableColor title:title titleColor:titleColor corn:corn fontSize:fontSize];
+    [self setTitleColor:[UIColor WY_ColorWithHex: hlTitleColor] forState:UIControlStateHighlighted];
+    
+    [self setTitleColor:[UIColor WY_ColorWithHex:disableTitleColor] forState:UIControlStateDisabled];
 }
 
 
