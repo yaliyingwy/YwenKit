@@ -50,7 +50,7 @@ static YwenAlert *_alert;
     {
         UIAlertView *alertView;
         if (cancelString == nil) {
-            alertView = [[UIAlertView alloc] initWithTitle:self.title message:message delegate:self cancelButtonTitle:confirmString otherButtonTitles: nil];
+            alertView = [[UIAlertView alloc] initWithTitle:self.title message:message delegate:self cancelButtonTitle:confirmString otherButtonTitles:nil, nil];
         }
         else
         {
@@ -67,6 +67,8 @@ static YwenAlert *_alert;
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex == 0 && _cancelCb != nil) {
          _cancelCb();
+    }else if (buttonIndex == 0 && _confirmCb != nil && _cancelCb == nil){
+        _confirmCb();
     }
     else if (buttonIndex == 1 && _confirmCb != nil)
     {
@@ -93,6 +95,10 @@ static YwenAlert *_alert;
 +(void)alert:(NSString *)msg vc:(UIViewController *)vc confirmStr:(NSString *)confirmStr confirmCb:(CallBack)confirmCb cancelStr:(NSString *)cancelStr cancelCb:(CallBack)cancelCb {
     [YwenAlert checkInstance];
     [_alert alert:msg vc:vc confirmString:confirmStr confirmBlock:confirmCb cancelString:cancelStr cancelBlock:cancelCb];
+}
++(void)alert:(NSString *)msg vc:(UIViewController *)vc confirmStr:(NSString *)confirmStr confirmCb:(CallBack)confirmCb{
+    [YwenAlert checkInstance];
+    [_alert alert:msg vc:vc confirmString:confirmStr confirmBlock:confirmCb cancelString:nil cancelBlock:nil];
 }
 
 +(void) checkInstance {

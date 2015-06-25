@@ -17,6 +17,7 @@
 +(void) alert: (NSString *) msg vc: (UIViewController *) vc;
 +(void) alertWithCancel: (NSString *) msg vc: (UIViewController *) vc;
 +(void) alert:(NSString *)msg vc:(UIViewController *)vc confirmStr: (NSString *) confirmStr confirmCb: (CallBack) confirmCb cancelStr: (NSString *) cancelStr cancelCb: (CallBack) cancelCb;
++(void)alert:(NSString *)msg vc:(UIViewController *)vc confirmStr:(NSString *)confirmStr confirmCb:(CallBack)confirmCb;
 
 +(void) setTitle: (NSString *) title;
 
