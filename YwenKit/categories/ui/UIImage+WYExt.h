@@ -12,5 +12,6 @@
 
 -(UIImage *) WY_Strech:(CGFloat) horizontal vertical:(CGFloat) vertical;
 +(UIImage *)WY_ImageWithColor:(NSInteger)color size:(CGSize)size;
++(UIImage *)WY_ImageWithColor:(NSInteger)color alpha:(CGFloat) alpha size:(CGSize)size;
 
 @end

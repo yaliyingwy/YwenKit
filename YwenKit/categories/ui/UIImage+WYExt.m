@@ -25,4 +25,15 @@
     return img;
 }
 
+
++(UIImage *)WY_ImageWithColor:(NSInteger)color alpha:(CGFloat) alpha size:(CGSize)size {
+    UIGraphicsBeginImageContext(size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context,[UIColor WY_ColorWithHex:color alpha:alpha].CGColor);
+    CGContextFillRect(context, CGRectMake(0, 0, size.width, size.height));
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
+}
+
 @end
