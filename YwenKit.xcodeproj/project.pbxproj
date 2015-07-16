@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C595C641B57485B003A37E5 /* Loading.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C595C601B57485B003A37E5 /* Loading.h */; };
+		4C595C651B57485B003A37E5 /* Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C595C611B57485B003A37E5 /* Loading.m */; };
+		4C595C661B57485B003A37E5 /* Toast.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C595C621B57485B003A37E5 /* Toast.h */; };
+		4C595C671B57485B003A37E5 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C595C631B57485B003A37E5 /* Toast.m */; };
 		F50948BC1B02DE110026159B /* UILabel+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F50948BA1B02DE110026159B /* UILabel+WYExt.h */; };
 		F50948BD1B02DE110026159B /* UILabel+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F50948BB1B02DE110026159B /* UILabel+WYExt.m */; };
 		F50948C01B02DF0C0026159B /* UIButton+WYExt.h in Headers */ = {isa = PBXBuildFile; fileRef = F50948BE1B02DF0C0026159B /* UIButton+WYExt.h */; };
@@ -52,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C595C601B57485B003A37E5 /* Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
+		4C595C611B57485B003A37E5 /* Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Loading.m; sourceTree = "<group>"; };
+		4C595C621B57485B003A37E5 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		4C595C631B57485B003A37E5 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		F501EA6A1AEF4E8300080D93 /* UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UI.h; path = ui/UI.h; sourceTree = "<group>"; };
 		F50948BA1B02DE110026159B /* UILabel+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WYExt.h"; sourceTree = "<group>"; };
 		F50948BB1B02DE110026159B /* UILabel+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WYExt.m"; sourceTree = "<group>"; };
@@ -112,6 +120,10 @@
 		F50E95011AEE797D00B2F665 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				4C595C601B57485B003A37E5 /* Loading.h */,
+				4C595C611B57485B003A37E5 /* Loading.m */,
+				4C595C621B57485B003A37E5 /* Toast.h */,
+				4C595C631B57485B003A37E5 /* Toast.m */,
 				F50E95021AEE7A3700B2F665 /* YwenAlert.h */,
 				F501EA6A1AEF4E8300080D93 /* UI.h */,
 				F50E95031AEE7A3700B2F665 /* YwenAlert.m */,
@@ -263,8 +275,10 @@
 				F50E95041AEE7A3700B2F665 /* YwenAlert.h in Headers */,
 				F5328F461B19E72100E9F176 /* YwenImageUrlCache.h in Headers */,
 				F50948CF1B02EFAC0026159B /* UITableViewCell+WYExt.h in Headers */,
+				4C595C661B57485B003A37E5 /* Toast.h in Headers */,
 				F5328F421B19DB3C00E9F176 /* YwenCache.h in Headers */,
 				F5FD418C1AF67AA00069A9CF /* NSData+WYExt.h in Headers */,
+				4C595C641B57485B003A37E5 /* Loading.h in Headers */,
 				F50948C01B02DF0C0026159B /* UIButton+WYExt.h in Headers */,
 				F5FD8C201AE0A2940059AE8B /* NSString+WYExt.h in Headers */,
 				F56CA69A1AF61258008497CB /* NSDictionary+WYExt.h in Headers */,
@@ -375,6 +389,7 @@
 				F50948BD1B02DE110026159B /* UILabel+WYExt.m in Sources */,
 				F50948C11B02DF0C0026159B /* UIButton+WYExt.m in Sources */,
 				F5FD8C211AE0A2940059AE8B /* NSString+WYExt.m in Sources */,
+				4C595C651B57485B003A37E5 /* Loading.m in Sources */,
 				F5328F471B19E72100E9F176 /* YwenImageUrlCache.m in Sources */,
 				F50948C51B02E0F70026159B /* UITextField+WYExt.m in Sources */,
 				F5328F431B19DB3C00E9F176 /* YwenCache.m in Sources */,
@@ -382,6 +397,7 @@
 				F50948D01B02EFAC0026159B /* UITableViewCell+WYExt.m in Sources */,
 				F50E95051AEE7A3700B2F665 /* YwenAlert.m in Sources */,
 				F5FD8C231AE0A2940059AE8B /* UIColor+WYExt.m in Sources */,
+				4C595C671B57485B003A37E5 /* Toast.m in Sources */,
 				F5FD8C251AE0A2940059AE8B /* UIView+WYExt.m in Sources */,
 				F5FD41911AF67CE40069A9CF /* UIImage+WYExt.m in Sources */,
 			);

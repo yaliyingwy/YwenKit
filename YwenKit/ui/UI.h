@@ -10,6 +10,8 @@
 #define YwenKit_UI_h
 
 #import "YwenAlert.h"
+#import "Toast.h"
+#import "Loading.h"
 
 
 #endif
