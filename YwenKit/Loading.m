@@ -166,27 +166,12 @@
     }
     [_window makeKeyAndVisible];
     _window.hidden = NO;
-    self.alpha = 0;
-    self.transform = CGAffineTransformMakeScale(0.1, 0.1);
-    _dialogLabel.text = msg;
-    
-    [UIView animateWithDuration:0.2 animations:^{
-        self.alpha = 1;
-        self.transform = CGAffineTransformMakeScale(1, 1);
-    } completion:^(BOOL finished) {
-        
-    }];
     
 }
 
 -(void) hideLoading {
     [_window resignKeyWindow];
-    [UIView animateWithDuration:0.2 animations:^{
-        self.alpha = 0;
-        self.transform = CGAffineTransformMakeScale(0.1, 0.1);
-    } completion:^(BOOL finished) {
-        _window.hidden = YES;
-    }];
+    _window.hidden = YES;
     
 }
 

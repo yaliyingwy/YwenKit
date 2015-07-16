@@ -255,7 +255,7 @@
         
         
         //移除
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.7 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:0.45 animations:^{
                 dialogView.alpha = 0;
                 dialogView.transform = CGAffineTransformMakeScale(0.1, 0.1);
