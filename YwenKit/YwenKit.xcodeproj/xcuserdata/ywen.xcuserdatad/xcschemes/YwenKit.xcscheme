@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5FD8BF81AE0A24C0059AE8B"
-               BuildableName = "YwenKit.framework"
+               BlueprintIdentifier = "4C61E17D1B70C61A00768F86"
+               BuildableName = "YwenKit.app"
                BlueprintName = "YwenKit"
                ReferencedContainer = "container:YwenKit.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5FD8C031AE0A24C0059AE8B"
+               BlueprintIdentifier = "4C61E1961B70C61A00768F86"
                BuildableName = "YwenKitTests.xctest"
                BlueprintName = "YwenKitTests"
                ReferencedContainer = "container:YwenKit.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5FD8C031AE0A24C0059AE8B"
+               BlueprintIdentifier = "4C61E1961B70C61A00768F86"
                BuildableName = "YwenKitTests.xctest"
                BlueprintName = "YwenKitTests"
                ReferencedContainer = "container:YwenKit.xcodeproj">
@@ -56,8 +56,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5FD8BF81AE0A24C0059AE8B"
-            BuildableName = "YwenKit.framework"
+            BlueprintIdentifier = "4C61E17D1B70C61A00768F86"
+            BuildableName = "YwenKit.app"
             BlueprintName = "YwenKit"
             ReferencedContainer = "container:YwenKit.xcodeproj">
          </BuildableReference>
@@ -72,15 +72,16 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5FD8BF81AE0A24C0059AE8B"
-            BuildableName = "YwenKit.framework"
+            BlueprintIdentifier = "4C61E17D1B70C61A00768F86"
+            BuildableName = "YwenKit.app"
             BlueprintName = "YwenKit"
             ReferencedContainer = "container:YwenKit.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +91,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5FD8BF81AE0A24C0059AE8B"
-            BuildableName = "YwenKit.framework"
+            BlueprintIdentifier = "4C61E17D1B70C61A00768F86"
+            BuildableName = "YwenKit.app"
             BlueprintName = "YwenKit"
             ReferencedContainer = "container:YwenKit.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

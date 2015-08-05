@@ -1,3 +1,4 @@
+@@ -1,136 +0,0 @@
 #
 #  Be sure to run `pod spec lint YwenKit.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
@@ -16,7 +17,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YwenKit"
-  s.version      = "0.3.3"
+  s.version      = "0.3.4"
   s.summary      = "some macros and categories for ios"
 
   s.description  = <<-DESC
@@ -78,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.3.3" }
+  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.3.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,10 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "YwenKit/**/*.{h,m}"
+  s.source_files  = "Classes", "YwenKit/YwenKit/Class/**/*.{h,m}"
   s.exclude_files = "Classes/Exclude"
 
-  #s.public_header_files = "YwenKit/YwenKit.h"
+  s.public_header_files = "YwenKit/YwenKit/Class/YwenKit.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -104,7 +105,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "Resources/*.png"
+  s.resources = "YwenKit/YwenKit/Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -134,3 +135,4 @@ Pod::Spec.new do |s|
   #s.dependency "NSXtensions" 
 
 end
+

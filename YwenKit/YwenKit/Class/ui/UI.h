@@ -12,6 +12,7 @@
 #import "YwenAlert.h"
 #import "Toast.h"
 #import "Loading.h"
+#import "YwenGestureLockView.h"
 
 
 #endif

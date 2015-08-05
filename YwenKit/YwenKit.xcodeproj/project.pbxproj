@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C61E1841B70C61A00768F86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1831B70C61A00768F86 /* main.m */; };
+		4C61E1871B70C61A00768F86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1861B70C61A00768F86 /* AppDelegate.m */; };
+		4C61E18A1B70C61A00768F86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1891B70C61A00768F86 /* ViewController.m */; };
+		4C61E18D1B70C61A00768F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E18B1B70C61A00768F86 /* Main.storyboard */; };
+		4C61E18F1B70C61A00768F86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E18E1B70C61A00768F86 /* Images.xcassets */; };
+		4C61E1921B70C61A00768F86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E1901B70C61A00768F86 /* LaunchScreen.xib */; };
+		4C61E19E1B70C61A00768F86 /* YwenKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E19D1B70C61A00768F86 /* YwenKitTests.m */; };
+		4C61E1D61B70C68800768F86 /* NSArray+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1AC1B70C68800768F86 /* NSArray+WYExt.m */; };
+		4C61E1D71B70C68800768F86 /* NSData+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1AE1B70C68800768F86 /* NSData+WYExt.m */; };
+		4C61E1D81B70C68800768F86 /* NSDictionary+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1B01B70C68800768F86 /* NSDictionary+WYExt.m */; };
+		4C61E1D91B70C68800768F86 /* NSString+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1B21B70C68800768F86 /* NSString+WYExt.m */; };
+		4C61E1DA1B70C68800768F86 /* UIButton+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1B51B70C68800768F86 /* UIButton+WYExt.m */; };
+		4C61E1DB1B70C68800768F86 /* UIColor+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1B71B70C68800768F86 /* UIColor+WYExt.m */; };
+		4C61E1DC1B70C68800768F86 /* UIImage+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1B91B70C68800768F86 /* UIImage+WYExt.m */; };
+		4C61E1DD1B70C68800768F86 /* UILabel+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1BB1B70C68800768F86 /* UILabel+WYExt.m */; };
+		4C61E1DE1B70C68800768F86 /* UITableViewCell+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1BD1B70C68800768F86 /* UITableViewCell+WYExt.m */; };
+		4C61E1DF1B70C68800768F86 /* UITextField+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1BF1B70C68800768F86 /* UITextField+WYExt.m */; };
+		4C61E1E01B70C68800768F86 /* UIView+WYExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1C11B70C68800768F86 /* UIView+WYExt.m */; };
+		4C61E1E11B70C68800768F86 /* YwenCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1C71B70C68800768F86 /* YwenCache.m */; };
+		4C61E1E21B70C68800768F86 /* YwenImageUrlCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1C91B70C68800768F86 /* YwenImageUrlCache.m */; };
+		4C61E1E31B70C68800768F86 /* Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1CC1B70C68800768F86 /* Loading.m */; };
+		4C61E1E41B70C68800768F86 /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1CE1B70C68800768F86 /* Toast.m */; };
+		4C61E1E51B70C68800768F86 /* YwenAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1D11B70C68800768F86 /* YwenAlert.m */; };
+		4C61E1E61B70C68800768F86 /* toast_err@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E1D41B70C68800768F86 /* toast_err@2x.png */; };
+		4C61E1E71B70C68800768F86 /* toast_success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E1D51B70C68800768F86 /* toast_success@2x.png */; };
+		4C61E1EA1B70C89300768F86 /* YwenGestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1E91B70C89300768F86 /* YwenGestureLockView.m */; };
+		4C61E1EF1B70EB6600768F86 /* gesture_node_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E1EB1B70EB6600768F86 /* gesture_node_normal.png */; };
+		4C61E1F01B70EB6600768F86 /* gesture_node_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E1EC1B70EB6600768F86 /* gesture_node_normal@2x.png */; };
+		4C61E1F11B70EB6600768F86 /* gesture_node_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E1ED1B70EB6600768F86 /* gesture_node_selected.png */; };
+		4C61E1F21B70EB6600768F86 /* gesture_node_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C61E1EE1B70EB6600768F86 /* gesture_node_selected@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C61E1981B70C61A00768F86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C61E1761B70C61A00768F86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C61E17D1B70C61A00768F86;
+			remoteInfo = YwenKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C61E17E1B70C61A00768F86 /* YwenKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YwenKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C61E1821B70C61A00768F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C61E1831B70C61A00768F86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C61E1851B70C61A00768F86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4C61E1861B70C61A00768F86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4C61E1881B70C61A00768F86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4C61E1891B70C61A00768F86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C61E18C1B70C61A00768F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C61E18E1B70C61A00768F86 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4C61E1911B70C61A00768F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4C61E1971B70C61A00768F86 /* YwenKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YwenKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C61E19C1B70C61A00768F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C61E19D1B70C61A00768F86 /* YwenKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YwenKitTests.m; sourceTree = "<group>"; };
+		4C61E1A91B70C68800768F86 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categories.h; sourceTree = "<group>"; };
+		4C61E1AB1B70C68800768F86 /* NSArray+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1AC1B70C68800768F86 /* NSArray+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1AD1B70C68800768F86 /* NSData+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1AE1B70C68800768F86 /* NSData+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1AF1B70C68800768F86 /* NSDictionary+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1B01B70C68800768F86 /* NSDictionary+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1B11B70C68800768F86 /* NSString+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1B21B70C68800768F86 /* NSString+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1B41B70C68800768F86 /* UIButton+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1B51B70C68800768F86 /* UIButton+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1B61B70C68800768F86 /* UIColor+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1B71B70C68800768F86 /* UIColor+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1B81B70C68800768F86 /* UIImage+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1B91B70C68800768F86 /* UIImage+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1BA1B70C68800768F86 /* UILabel+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1BB1B70C68800768F86 /* UILabel+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1BC1B70C68800768F86 /* UITableViewCell+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1BD1B70C68800768F86 /* UITableViewCell+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1BE1B70C68800768F86 /* UITextField+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1BF1B70C68800768F86 /* UITextField+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1C01B70C68800768F86 /* UIView+WYExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WYExt.h"; sourceTree = "<group>"; };
+		4C61E1C11B70C68800768F86 /* UIView+WYExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WYExt.m"; sourceTree = "<group>"; };
+		4C61E1C31B70C68800768F86 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
+		4C61E1C61B70C68800768F86 /* YwenCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YwenCache.h; sourceTree = "<group>"; };
+		4C61E1C71B70C68800768F86 /* YwenCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YwenCache.m; sourceTree = "<group>"; };
+		4C61E1C81B70C68800768F86 /* YwenImageUrlCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YwenImageUrlCache.h; sourceTree = "<group>"; };
+		4C61E1C91B70C68800768F86 /* YwenImageUrlCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YwenImageUrlCache.m; sourceTree = "<group>"; };
+		4C61E1CB1B70C68800768F86 /* Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
+		4C61E1CC1B70C68800768F86 /* Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Loading.m; sourceTree = "<group>"; };
+		4C61E1CD1B70C68800768F86 /* Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toast.h; sourceTree = "<group>"; };
+		4C61E1CE1B70C68800768F86 /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
+		4C61E1CF1B70C68800768F86 /* UI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UI.h; sourceTree = "<group>"; };
+		4C61E1D01B70C68800768F86 /* YwenAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YwenAlert.h; sourceTree = "<group>"; };
+		4C61E1D11B70C68800768F86 /* YwenAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YwenAlert.m; sourceTree = "<group>"; };
+		4C61E1D21B70C68800768F86 /* YwenKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YwenKit.h; sourceTree = "<group>"; };
+		4C61E1D41B70C68800768F86 /* toast_err@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_err@2x.png"; sourceTree = "<group>"; };
+		4C61E1D51B70C68800768F86 /* toast_success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toast_success@2x.png"; sourceTree = "<group>"; };
+		4C61E1E81B70C89300768F86 /* YwenGestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YwenGestureLockView.h; sourceTree = "<group>"; };
+		4C61E1E91B70C89300768F86 /* YwenGestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YwenGestureLockView.m; sourceTree = "<group>"; };
+		4C61E1EB1B70EB6600768F86 /* gesture_node_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_node_normal.png; sourceTree = "<group>"; };
+		4C61E1EC1B70EB6600768F86 /* gesture_node_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_normal@2x.png"; sourceTree = "<group>"; };
+		4C61E1ED1B70EB6600768F86 /* gesture_node_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_node_selected.png; sourceTree = "<group>"; };
+		4C61E1EE1B70EB6600768F86 /* gesture_node_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_node_selected@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C61E17B1B70C61A00768F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C61E1941B70C61A00768F86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C61E1751B70C61A00768F86 = {
+			isa = PBXGroup;
+			children = (
+				4C61E1801B70C61A00768F86 /* YwenKit */,
+				4C61E19A1B70C61A00768F86 /* YwenKitTests */,
+				4C61E17F1B70C61A00768F86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C61E17F1B70C61A00768F86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E17E1B70C61A00768F86 /* YwenKit.app */,
+				4C61E1971B70C61A00768F86 /* YwenKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C61E1801B70C61A00768F86 /* YwenKit */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1A71B70C68800768F86 /* Class */,
+				4C61E1D31B70C68800768F86 /* Resources */,
+				4C61E1851B70C61A00768F86 /* AppDelegate.h */,
+				4C61E1861B70C61A00768F86 /* AppDelegate.m */,
+				4C61E1881B70C61A00768F86 /* ViewController.h */,
+				4C61E1891B70C61A00768F86 /* ViewController.m */,
+				4C61E18B1B70C61A00768F86 /* Main.storyboard */,
+				4C61E18E1B70C61A00768F86 /* Images.xcassets */,
+				4C61E1901B70C61A00768F86 /* LaunchScreen.xib */,
+				4C61E1811B70C61A00768F86 /* Supporting Files */,
+			);
+			path = YwenKit;
+			sourceTree = "<group>";
+		};
+		4C61E1811B70C61A00768F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1821B70C61A00768F86 /* Info.plist */,
+				4C61E1831B70C61A00768F86 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C61E19A1B70C61A00768F86 /* YwenKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E19D1B70C61A00768F86 /* YwenKitTests.m */,
+				4C61E19B1B70C61A00768F86 /* Supporting Files */,
+			);
+			path = YwenKitTests;
+			sourceTree = "<group>";
+		};
+		4C61E19B1B70C61A00768F86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E19C1B70C61A00768F86 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C61E1A71B70C68800768F86 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1A81B70C68800768F86 /* categories */,
+				4C61E1C21B70C68800768F86 /* macros */,
+				4C61E1C41B70C68800768F86 /* net */,
+				4C61E1CA1B70C68800768F86 /* ui */,
+				4C61E1D21B70C68800768F86 /* YwenKit.h */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		4C61E1A81B70C68800768F86 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1A91B70C68800768F86 /* Categories.h */,
+				4C61E1AA1B70C68800768F86 /* common */,
+				4C61E1B31B70C68800768F86 /* ui */,
+			);
+			path = categories;
+			sourceTree = "<group>";
+		};
+		4C61E1AA1B70C68800768F86 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1AB1B70C68800768F86 /* NSArray+WYExt.h */,
+				4C61E1AC1B70C68800768F86 /* NSArray+WYExt.m */,
+				4C61E1AD1B70C68800768F86 /* NSData+WYExt.h */,
+				4C61E1AE1B70C68800768F86 /* NSData+WYExt.m */,
+				4C61E1AF1B70C68800768F86 /* NSDictionary+WYExt.h */,
+				4C61E1B01B70C68800768F86 /* NSDictionary+WYExt.m */,
+				4C61E1B11B70C68800768F86 /* NSString+WYExt.h */,
+				4C61E1B21B70C68800768F86 /* NSString+WYExt.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		4C61E1B31B70C68800768F86 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1B41B70C68800768F86 /* UIButton+WYExt.h */,
+				4C61E1B51B70C68800768F86 /* UIButton+WYExt.m */,
+				4C61E1B61B70C68800768F86 /* UIColor+WYExt.h */,
+				4C61E1B71B70C68800768F86 /* UIColor+WYExt.m */,
+				4C61E1B81B70C68800768F86 /* UIImage+WYExt.h */,
+				4C61E1B91B70C68800768F86 /* UIImage+WYExt.m */,
+				4C61E1BA1B70C68800768F86 /* UILabel+WYExt.h */,
+				4C61E1BB1B70C68800768F86 /* UILabel+WYExt.m */,
+				4C61E1BC1B70C68800768F86 /* UITableViewCell+WYExt.h */,
+				4C61E1BD1B70C68800768F86 /* UITableViewCell+WYExt.m */,
+				4C61E1BE1B70C68800768F86 /* UITextField+WYExt.h */,
+				4C61E1BF1B70C68800768F86 /* UITextField+WYExt.m */,
+				4C61E1C01B70C68800768F86 /* UIView+WYExt.h */,
+				4C61E1C11B70C68800768F86 /* UIView+WYExt.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		4C61E1C21B70C68800768F86 /* macros */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1C31B70C68800768F86 /* Macros.h */,
+			);
+			path = macros;
+			sourceTree = "<group>";
+		};
+		4C61E1C41B70C68800768F86 /* net */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1C51B70C68800768F86 /* cache */,
+			);
+			path = net;
+			sourceTree = "<group>";
+		};
+		4C61E1C51B70C68800768F86 /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1C61B70C68800768F86 /* YwenCache.h */,
+				4C61E1C71B70C68800768F86 /* YwenCache.m */,
+				4C61E1C81B70C68800768F86 /* YwenImageUrlCache.h */,
+				4C61E1C91B70C68800768F86 /* YwenImageUrlCache.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		4C61E1CA1B70C68800768F86 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1CB1B70C68800768F86 /* Loading.h */,
+				4C61E1CC1B70C68800768F86 /* Loading.m */,
+				4C61E1E81B70C89300768F86 /* YwenGestureLockView.h */,
+				4C61E1E91B70C89300768F86 /* YwenGestureLockView.m */,
+				4C61E1CD1B70C68800768F86 /* Toast.h */,
+				4C61E1CE1B70C68800768F86 /* Toast.m */,
+				4C61E1CF1B70C68800768F86 /* UI.h */,
+				4C61E1D01B70C68800768F86 /* YwenAlert.h */,
+				4C61E1D11B70C68800768F86 /* YwenAlert.m */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		4C61E1D31B70C68800768F86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C61E1D41B70C68800768F86 /* toast_err@2x.png */,
+				4C61E1EB1B70EB6600768F86 /* gesture_node_normal.png */,
+				4C61E1EC1B70EB6600768F86 /* gesture_node_normal@2x.png */,
+				4C61E1ED1B70EB6600768F86 /* gesture_node_selected.png */,
+				4C61E1EE1B70EB6600768F86 /* gesture_node_selected@2x.png */,
+				4C61E1D51B70C68800768F86 /* toast_success@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C61E17D1B70C61A00768F86 /* YwenKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C61E1A11B70C61A00768F86 /* Build configuration list for PBXNativeTarget "YwenKit" */;
+			buildPhases = (
+				4C61E17A1B70C61A00768F86 /* Sources */,
+				4C61E17B1B70C61A00768F86 /* Frameworks */,
+				4C61E17C1B70C61A00768F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YwenKit;
+			productName = YwenKit;
+			productReference = 4C61E17E1B70C61A00768F86 /* YwenKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C61E1961B70C61A00768F86 /* YwenKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C61E1A41B70C61A00768F86 /* Build configuration list for PBXNativeTarget "YwenKitTests" */;
+			buildPhases = (
+				4C61E1931B70C61A00768F86 /* Sources */,
+				4C61E1941B70C61A00768F86 /* Frameworks */,
+				4C61E1951B70C61A00768F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C61E1991B70C61A00768F86 /* PBXTargetDependency */,
+			);
+			name = YwenKitTests;
+			productName = YwenKitTests;
+			productReference = 4C61E1971B70C61A00768F86 /* YwenKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C61E1761B70C61A00768F86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = ywen;
+				TargetAttributes = {
+					4C61E17D1B70C61A00768F86 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					4C61E1961B70C61A00768F86 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 4C61E17D1B70C61A00768F86;
+					};
+				};
+			};
+			buildConfigurationList = 4C61E1791B70C61A00768F86 /* Build configuration list for PBXProject "YwenKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C61E1751B70C61A00768F86;
+			productRefGroup = 4C61E17F1B70C61A00768F86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C61E17D1B70C61A00768F86 /* YwenKit */,
+				4C61E1961B70C61A00768F86 /* YwenKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C61E17C1B70C61A00768F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C61E1F11B70EB6600768F86 /* gesture_node_selected.png in Resources */,
+				4C61E1E71B70C68800768F86 /* toast_success@2x.png in Resources */,
+				4C61E1F21B70EB6600768F86 /* gesture_node_selected@2x.png in Resources */,
+				4C61E1E61B70C68800768F86 /* toast_err@2x.png in Resources */,
+				4C61E1EF1B70EB6600768F86 /* gesture_node_normal.png in Resources */,
+				4C61E18D1B70C61A00768F86 /* Main.storyboard in Resources */,
+				4C61E1F01B70EB6600768F86 /* gesture_node_normal@2x.png in Resources */,
+				4C61E1921B70C61A00768F86 /* LaunchScreen.xib in Resources */,
+				4C61E18F1B70C61A00768F86 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C61E1951B70C61A00768F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C61E17A1B70C61A00768F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C61E1DD1B70C68800768F86 /* UILabel+WYExt.m in Sources */,
+				4C61E1DB1B70C68800768F86 /* UIColor+WYExt.m in Sources */,
+				4C61E1EA1B70C89300768F86 /* YwenGestureLockView.m in Sources */,
+				4C61E1D81B70C68800768F86 /* NSDictionary+WYExt.m in Sources */,
+				4C61E1DA1B70C68800768F86 /* UIButton+WYExt.m in Sources */,
+				4C61E1D91B70C68800768F86 /* NSString+WYExt.m in Sources */,
+				4C61E1D71B70C68800768F86 /* NSData+WYExt.m in Sources */,
+				4C61E1DC1B70C68800768F86 /* UIImage+WYExt.m in Sources */,
+				4C61E1DE1B70C68800768F86 /* UITableViewCell+WYExt.m in Sources */,
+				4C61E1E31B70C68800768F86 /* Loading.m in Sources */,
+				4C61E18A1B70C61A00768F86 /* ViewController.m in Sources */,
+				4C61E1E11B70C68800768F86 /* YwenCache.m in Sources */,
+				4C61E1DF1B70C68800768F86 /* UITextField+WYExt.m in Sources */,
+				4C61E1E21B70C68800768F86 /* YwenImageUrlCache.m in Sources */,
+				4C61E1871B70C61A00768F86 /* AppDelegate.m in Sources */,
+				4C61E1D61B70C68800768F86 /* NSArray+WYExt.m in Sources */,
+				4C61E1E41B70C68800768F86 /* Toast.m in Sources */,
+				4C61E1E01B70C68800768F86 /* UIView+WYExt.m in Sources */,
+				4C61E1E51B70C68800768F86 /* YwenAlert.m in Sources */,
+				4C61E1841B70C61A00768F86 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C61E1931B70C61A00768F86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C61E19E1B70C61A00768F86 /* YwenKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C61E1991B70C61A00768F86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C61E17D1B70C61A00768F86 /* YwenKit */;
+			targetProxy = 4C61E1981B70C61A00768F86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C61E18B1B70C61A00768F86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C61E18C1B70C61A00768F86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C61E1901B70C61A00768F86 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C61E1911B70C61A00768F86 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C61E19F1B70C61A00768F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C61E1A01B70C61A00768F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C61E1A21B70C61A00768F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/YwenKit/Class/**",
+				);
+				INFOPLIST_FILE = YwenKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C61E1A31B70C61A00768F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/YwenKit/Class/**",
+				);
+				INFOPLIST_FILE = YwenKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4C61E1A51B70C61A00768F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YwenKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YwenKit.app/YwenKit";
+			};
+			name = Debug;
+		};
+		4C61E1A61B70C61A00768F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YwenKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YwenKit.app/YwenKit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C61E1791B70C61A00768F86 /* Build configuration list for PBXProject "YwenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C61E19F1B70C61A00768F86 /* Debug */,
+				4C61E1A01B70C61A00768F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C61E1A11B70C61A00768F86 /* Build configuration list for PBXNativeTarget "YwenKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C61E1A21B70C61A00768F86 /* Debug */,
+				4C61E1A31B70C61A00768F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C61E1A41B70C61A00768F86 /* Build configuration list for PBXNativeTarget "YwenKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C61E1A51B70C61A00768F86 /* Debug */,
+				4C61E1A61B70C61A00768F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C61E1761B70C61A00768F86 /* Project object */;
+}
