@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YwenKit"
-  s.version      = "0.3.4"
+  s.version      = "0.3.5"
   s.summary      = "some macros and categories for ios"
 
   s.description  = <<-DESC
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.3.4" }
+  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.3.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
