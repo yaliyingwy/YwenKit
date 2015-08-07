@@ -15,7 +15,12 @@
     UIActivityIndicatorView *_activity;
     UIView *_dialogView;
     UILabel *_dialogLabel;
+    NSTimeInterval _timeout;
 }
+
+@property (assign, nonatomic) NSTimeInterval timeout;
+
++(void) setTimeout:(NSTimeInterval) timeout;
 
 +(void) show:(NSString *) message isForce: (BOOL) isForce;
 +(void) hide;

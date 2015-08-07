@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>A42EDE60-2214-458A-89B7-33B681D371B7</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>YwenKit</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>6B3C0E3F0FB5DECB2DA8DD2C71A689FE502F284D</key>
 		<string>https://github.com/yaliyingwy/YwenKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>YwenKit/YwenKit.xcodeproj/project.xcworkspace</string>
+	<string>YwenKit/YwenKit.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>6B3C0E3F0FB5DECB2DA8DD2C71A689FE502F284D</key>
