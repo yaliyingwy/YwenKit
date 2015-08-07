@@ -1,4 +1,3 @@
-@@ -1,136 +0,0 @@
 #
 #  Be sure to run `pod spec lint YwenKit.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
@@ -17,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YwenKit"
-  s.version      = "0.3.5"
+  s.version      = "0.3.6"
   s.summary      = "some macros and categories for ios"
 
   s.description  = <<-DESC
@@ -79,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.3.5" }
+  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.3.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
