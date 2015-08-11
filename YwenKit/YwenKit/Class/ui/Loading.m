@@ -163,6 +163,8 @@
         [self createUI];
     });
     
+    _dialogLabel.text = msg.length > 0 ? msg : @"加载中...";
+    
     if (isForce == YES) {
         self.userInteractionEnabled = NO;
     }
