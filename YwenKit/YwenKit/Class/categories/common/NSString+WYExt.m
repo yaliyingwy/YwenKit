@@ -222,4 +222,17 @@
     return [predicate evaluateWithObject:self];
 }
 
+-(NSString *)WY_FirstIndexLetter {
+    unichar first = [self characterAtIndex:0];
+    if (first < 'z' && first > 'A') {
+        return [NSString stringWithFormat:@"%c", first];
+    }
+    else
+    {
+        return [NSString stringWithFormat:@"%c", pinyinFirstLetter([self characterAtIndex:0])];
+    }
+}
+
+
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C5992AE1BBCEB9900CA5039 /* Pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5992AC1BBCEB9900CA5039 /* Pinyin.c */; settings = {ASSET_TAGS = (); }; };
 		4C61E1841B70C61A00768F86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1831B70C61A00768F86 /* main.m */; };
 		4C61E1871B70C61A00768F86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1861B70C61A00768F86 /* AppDelegate.m */; };
 		4C61E18A1B70C61A00768F86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C61E1891B70C61A00768F86 /* ViewController.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C5992AC1BBCEB9900CA5039 /* Pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Pinyin.c; sourceTree = "<group>"; };
+		4C5992AD1BBCEB9900CA5039 /* Pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pinyin.h; sourceTree = "<group>"; };
 		4C61E17E1B70C61A00768F86 /* YwenKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YwenKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C61E1821B70C61A00768F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C61E1831B70C61A00768F86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 				4C61E1B01B70C68800768F86 /* NSDictionary+WYExt.m */,
 				4C61E1B11B70C68800768F86 /* NSString+WYExt.h */,
 				4C61E1B21B70C68800768F86 /* NSString+WYExt.m */,
+				4C5992AC1BBCEB9900CA5039 /* Pinyin.c */,
+				4C5992AD1BBCEB9900CA5039 /* Pinyin.h */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 				4C61E1DB1B70C68800768F86 /* UIColor+WYExt.m in Sources */,
 				4C61E1EA1B70C89300768F86 /* YwenGestureLockView.m in Sources */,
 				4C61E1D81B70C68800768F86 /* NSDictionary+WYExt.m in Sources */,
+				4C5992AE1BBCEB9900CA5039 /* Pinyin.c in Sources */,
 				4C61E1DA1B70C68800768F86 /* UIButton+WYExt.m in Sources */,
 				4C61E1D91B70C68800768F86 /* NSString+WYExt.m in Sources */,
 				4C61E1D71B70C68800768F86 /* NSData+WYExt.m in Sources */,
@@ -632,6 +638,7 @@
 				4C61E1A31B70C61A00768F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C61E1A41B70C61A00768F86 /* Build configuration list for PBXNativeTarget "YwenKitTests" */ = {
 			isa = XCConfigurationList;
@@ -640,6 +647,7 @@
 				4C61E1A61B70C61A00768F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

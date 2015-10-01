@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonDigest.h>
+#import "Pinyin.h"
 
 @interface NSString (WYExt)
 
@@ -26,6 +27,7 @@
 -(BOOL) WY_HasLetter;
 -(BOOL) WY_IsNumberOrLetter;
 -(NSString *) WY_TrimStyle;
+-(NSString *) WY_FirstIndexLetter;
 
 
 
