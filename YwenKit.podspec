@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YwenKit"
-  s.version      = "0.4.0"
+  s.version      = "0.4.1"
   s.summary      = "some macros and categories for ios"
 
   s.description  = <<-DESC
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.4.0" }
+  s.source       = { :git => "https://github.com/yaliyingwy/YwenKit.git", :tag => "0.4.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "YwenKit/YwenKit/Class/**/*.{h,m}"
+  s.source_files  = "Classes", "YwenKit/YwenKit/Class/**/*.{h,m,c}"
   s.exclude_files = "Classes/Exclude"
 
   s.public_header_files = "YwenKit/YwenKit/Class/YwenKit.h", "YwenKit/YwenKit/Class/**/*.h"
