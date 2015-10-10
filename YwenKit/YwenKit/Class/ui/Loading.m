@@ -175,19 +175,29 @@
     [_window makeKeyAndVisible];
     _window.hidden = NO;
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_timeout * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        if ([_window isKeyWindow]) {
-            [self hideLoading];
-            [Toast showErr:@"请求超时！"];
-        }
-        
-    });
+    _timer = [NSTimer timerWithTimeInterval:_timeout target:self selector:@selector(timeoutFunc) userInfo:nil repeats:NO];
     
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_timeout * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        if ([_window isKeyWindow]) {
+//            [self hideLoading];
+//            [Toast showErr:@"请求超时！"];
+//        }
+//        
+//    });
+    
+}
+
+-(void) timeoutFunc {
+    if ([_window isKeyWindow]) {
+        [self hideLoading];
+        [Toast showErr:@"请求超时！"];
+    }
 }
 
 -(void) hideLoading {
     [_window resignKeyWindow];
     _window.hidden = YES;
+    [_timer invalidate];
     
 }
 
