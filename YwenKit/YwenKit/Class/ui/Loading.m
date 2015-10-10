@@ -197,7 +197,10 @@
 -(void) hideLoading {
     [_window resignKeyWindow];
     _window.hidden = YES;
-    [_timer invalidate];
+    if ([_timer isValid]) {
+        [_timer invalidate];
+    }
+    
     
 }
 
