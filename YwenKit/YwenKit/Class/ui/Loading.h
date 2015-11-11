@@ -17,7 +17,7 @@
     UILabel *_dialogLabel;
     NSTimeInterval _timeout;
     
-    NSTimer *_timer;
+    NSInteger _funcCount;
 }
 
 @property (assign, nonatomic) NSTimeInterval timeout;

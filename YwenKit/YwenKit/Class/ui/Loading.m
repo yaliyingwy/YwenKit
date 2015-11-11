@@ -127,6 +127,9 @@
     UITapGestureRecognizer *tapGes = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapScreen)];
     [self addGestureRecognizer:tapGes];
     
+    
+    _funcCount = 0;
+    
 }
 
 -(void) tapScreen {
@@ -175,15 +178,16 @@
     [_window makeKeyAndVisible];
     _window.hidden = NO;
     
-    _timer = [NSTimer timerWithTimeInterval:_timeout target:self selector:@selector(timeoutFunc) userInfo:nil repeats:NO];
+    _funcCount++;
     
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_timeout * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        if ([_window isKeyWindow]) {
-//            [self hideLoading];
-//            [Toast showErr:@"请求超时！"];
-//        }
-//        
-//    });
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(_timeout * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if ([_window isKeyWindow] && _funcCount == 1) {
+            [self hideLoading];
+            [Toast showErr:@"请求超时！"];
+        }
+        _funcCount--;
+        
+    });
     
 }
 
@@ -197,11 +201,6 @@
 -(void) hideLoading {
     [_window resignKeyWindow];
     _window.hidden = YES;
-    if ([_timer isValid]) {
-        [_timer invalidate];
-    }
-    
-    
 }
 
 @end
