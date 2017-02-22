@@ -21,6 +21,9 @@
 
 
 +(void)showToastWithContent:(NSString *)content showTime:(NSTimeInterval)showTime postion:(NSInteger)postion {
+    if (![content isKindOfClass:[NSString class]] || content.length == 0) {
+        return;
+    }
     Toast *toast = [Toast new];
     toast.translatesAutoresizingMaskIntoConstraints = NO;
     toast.backgroundColor = [UIColor clearColor];
@@ -148,6 +151,9 @@
 }
 
 -(void) showWith:(NSString *) msg success:(BOOL) sucess {
+    if (![msg isKindOfClass:[NSString class]] || msg.length == 0) {
+        return;
+    }
     self.translatesAutoresizingMaskIntoConstraints = NO;
     self.backgroundColor = [UIColor clearColor];
     
